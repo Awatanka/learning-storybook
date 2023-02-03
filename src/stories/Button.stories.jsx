@@ -1,14 +1,13 @@
-import React from 'react';
-
-import { Button } from './Button';
-
+import React from "react";
+import { Button } from "./Button";
+import { background } from "../components/shared/styles";
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
@@ -19,22 +18,36 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: "Button",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: "Button",
 };
 
 export const Large = Template.bind({});
 Large.args = {
-  size: 'large',
-  label: 'Button',
+  size: "large",
+  label: "Button",
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  size: 'small',
-  label: 'Button',
+  size: "small",
+  label: "Button",
+};
+
+export const Red = Template.bind({});
+Red.args = {
+  size: "large",
+  backgroundColor: background.inputFormDefault,
+  label: "Button",
+};
+
+Red.argTypes = {
+  backgroundColor: {
+    control: "inline-radio",
+    options: ["red", "green", "blue"],
+  },
 };
