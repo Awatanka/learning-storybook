@@ -19,6 +19,9 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
     "@storybook/preset-scss",
+    "@storybook/addon-actions",
+    "@storybook/addon-viewport",
+    "@storybook/addon-measure",
   ],
   framework: "@storybook/react",
   core: {

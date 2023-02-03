@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./Button";
 import { background } from "../components/shared/styles";
+import { colors } from "../components/shared/styles";
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: "Example/Button",
@@ -24,12 +25,14 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: "Button",
+  backgroundColor: colors.main.scss,
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: "large",
   label: "Button",
+  backgroundColor: colors.main.hex,
 };
 
 export const Small = Template.bind({});
@@ -48,6 +51,6 @@ Red.args = {
 Red.argTypes = {
   backgroundColor: {
     control: "inline-radio",
-    options: ["red", "green", "blue"],
+    options: [background.inputFormDefault, "green", "blue"],
   },
 };

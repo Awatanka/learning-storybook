@@ -1,9 +1,39 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
-<Meta title="Colors" />;
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+
+<Meta title="Colors" />
 
 <ColorPalette>
-  <ColorItem title="neutral" subtitle="Neutral Shades" colors={[`#3F8EB7`]} />
-  <ColorItem title="$primary" subtitle="Gray" colors={[`#333`]} />
-  <ColorItem title="$primary" subtitle="Gray" colors={[`#000`]} />
-  <ColorItem title="$primary" subtitle="Gray" colors={[`#fff`]} />
+  <ColorItem
+    title="theme.color.neutral"
+    subtitle="Some of the neutrals"
+    colors={{
+      black: "#000D42",
+      dark: "#021563",
+      greyDark: "#2B355B",
+      grey: "#667B90",
+      greyBlue: "#ABBED1",
+      silver: "#F5F7FA",
+      white: "#FFFFFF",
+    }}
+  />
+  <ColorItem
+    title="theme.color.primary"
+    subtitle="Coral"
+    colors={{ WildWatermelon: "#FF4785" }}
+  />
+  <ColorItem
+    title="theme.color.secondary"
+    subtitle="Ocean"
+    colors={{ DodgerBlue: "#1EA7FD" }}
+  />
+  <ColorItem
+    title="theme.color.positive"
+    subtitle="Green"
+    colors={{
+      Apple: "rgba(102,191,60,1)",
+      Apple80: "rgba(102,191,60,.8)",
+      Apple60: "rgba(102,191,60,.6)",
+      Apple30: "rgba(102,191,60,.3)",
+    }}
+  />
 </ColorPalette>
