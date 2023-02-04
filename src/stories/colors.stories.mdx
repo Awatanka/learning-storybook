@@ -8,9 +8,10 @@ import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
     subtitle="Some of the neutrals"
     colors={{
       black: "#000D42",
-      dark: "#021563",
+      darkBlack: "#021563",
       greyDark: "#2B355B",
-      grey: "#667B90",
+      neutralGrey: "#667B90",
+      lightGrey: "#ABBED1",
       greyBlue: "#ABBED1",
       silver: "#F5F7FA",
       white: "#FFFFFF",
@@ -18,22 +19,50 @@ import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
   />
   <ColorItem
     title="theme.color.primary"
-    subtitle="Coral"
-    colors={{ WildWatermelon: "#FF4785" }}
-  />
-  <ColorItem
-    title="theme.color.secondary"
-    subtitle="Ocean"
-    colors={{ DodgerBlue: "#1EA7FD" }}
-  />
-  <ColorItem
-    title="theme.color.positive"
-    subtitle="Green"
+    subtitle="Primary"
     colors={{
-      Apple: "rgba(102,191,60,1)",
-      Apple80: "rgba(102,191,60,.8)",
-      Apple60: "rgba(102,191,60,.6)",
-      Apple30: "rgba(102,191,60,.3)",
+      darkBlue: "#3910AA",
+      navy: "#320F93",
+      midBlue: "#3D10BA",
+      azure: "#7045E9",
+      skyPink: "#D4D7F3",
+      lightBlue: "#EEF5FC",
+    }}
+  />
+  <ColorItem
+    title="theme.color.success"
+    subtitle="Success"
+    colors={{
+      darkGreen: "#115B43",
+      forest: "#1B6E53",
+      midGreen: "#009262",
+      herbal: "#32C997",
+      mint: "#84DFC1",
+      lightGreen: "#F1FBF8",
+    }}
+  />
+  <ColorItem
+    title="theme.color.warning"
+    subtitle="Warning"
+    colors={{
+      darkYellow: "#E48900",
+      lemon: "#FFA826",
+      midYellow: "#FFB240",
+      straw: "#FFB240",
+      sand: "#FFD596",
+      lightYellow: "#FFF8EC",
+    }}
+  />
+  <ColorItem
+    title="theme.color.danger"
+    subtitle="Danger"
+    colors={{
+      darkRed: "#C33025",
+      scarlet: "#E01507",
+      midRed: "#E02B1D",
+      radpberry: "#FF5A4F",
+      rubicund: "#F0857D",
+      lightRed: "#FFF1F0",
     }}
   />
 </ColorPalette>

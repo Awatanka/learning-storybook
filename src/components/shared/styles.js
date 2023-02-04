@@ -1,15 +1,6 @@
-// import { css } from "@storybook/theming";
-// import { rgba } from "polished";
-
 // Global style variables
 export const background = {
   app: "#E5E5E5",
-  inputFormDefault: "#EEF5FC", // primary/M_Blue
-  inputFormHover: "#EEF5FC", // Primary/L_Blue
-  inputFormFocus: "#E5E5E5",
-  inputFormLoading: "#EEF5FC", // Primary/L_Blue
-  warning: "#FFF5CF",
-  calmBlue: "#E3F3FF",
 };
 
 export const formColor = {
@@ -22,62 +13,68 @@ export const formColor = {
   error: "#FFF1F0", // Danger/L_Red
 };
 
-export const color = {
+export const colorNeutral = {
   // Palette
-  primary: "#FF4785", // Coral
-  secondary: "#029CFD", // Ocean
-  tertiary: "#E3E6E8", // Light grey
-
-  orange: "#FC521F",
-  gold: "#FFAE00",
-  green: "#66BF3C",
-  seafoam: "#37D5D3",
-  purple: "#6F2CAC",
-  ultraviolet: "#2A0481",
-  red: "#ff4400",
-
-  // Calm
-  bluelight: "#E3F3FF", // rgba($color.blue, 12%)
-  bluelighter: "#F5FBFF",
-
-  // Monochrome
-  lightest: "#FFFFFF",
-  lighter: "#F7FAFC",
-  light: "#EEF3F6",
-  mediumlight: "#ECF4F9",
-  medium: "#D9E8F2",
-  mediumdark: "#73828C",
-  dark: "#5C6870",
-  darker: "#454E54",
-  darkest: "#2E3438",
-  tr10: "rgba(0, 0, 0, 0.1)",
-  tr5: "rgba(0, 0, 0, 0.05)",
-
-  border: "hsla(203, 50%, 30%, 0.15)",
-
-  // Status
-  neutral: "#000D42",
-  primary: "#3910AA",
-  negative: "#D43900",
-  warning: "#A15C20",
-  selected: "#0271B6",
+  black: "#000D42", // Neutral/Black
+  darkBlack: "#021563", // Neutral/D_Dark blue
+  neutralGrey: "#2B355B", // Neutral/Grey dark
+  lightGrey: "##667B90", // Neutral/L_Grey
+  greyBlue: "#ABBED1", // Neutral/Grey-blue
+  silver: "#F5F7FA", // Neutral/Silver
 };
 
-export const colors = {
-  main: {
-    name: "main",
-    hex: "#007DBC", // previously 0A6EB4
-    scss: "$color__main",
-    type: "communications",
-  },
-  "sequential-default-07": {
-    name: "sequential-default-07",
-    hex: "#9DEAFF",
-    scss: "$color__sequential-default-07",
-    type: "sequential-default",
-    shortDescription: "sequential default 07",
-  },
+export const colorPrimary = {
+  darkBlue: "#3910AA",
+  navy: "#320F93",
+  midBlue: "#3D10BA",
+  azure: "#7045E9",
+  skyPink: "#D4D7F3",
+  lightBlue: "#EEF5FC",
 };
+
+export const colorSuccess = {
+  darkGreen: "#115B43",
+  forest: "#1B6E53",
+  midGreen: "#009262",
+  herbal: "#32C997",
+  mint: "#84DFC1",
+  lightGreen: "#F1FBF8",
+};
+
+export const colorWarning = {
+  darkYellow: "#E48900",
+  lemon: "#FFA826",
+  midYellow: "#FFB240",
+  straw: "#FFB240",
+  sand: "#FFD596",
+  lightYellow: "#FFF8EC",
+};
+
+export const colorDanger = {
+  darkRed: "#C33025",
+  scarlet: "#E01507",
+  midRed: "#E02B1D",
+  radpberry: "#FF5A4F",
+  rubicund: "#F0857D",
+  lightRed: "#FFF1F0",
+};
+
+// // !example with scss
+// export const colors = {
+//   main: {
+//     name: "main",
+//     hex: "#007DBC", // previously 0A6EB4
+//     scss: "$color__main",
+//     type: "communications",
+//   },
+//   "sequential-default-07": {
+//     name: "sequential-default-07",
+//     hex: "#9DEAFF",
+//     scss: "$color__sequential-default-07",
+//     type: "sequential-default",
+//     shortDescription: "sequential default 07",
+//   },
+// };
 
 // Typography styles
 // export const headers = {
