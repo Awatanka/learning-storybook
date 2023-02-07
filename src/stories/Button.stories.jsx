@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "./Button";
-import { background } from "../components/shared/styles";
+import { colorNeutral } from "../components/shared/styles";
 import { colors } from "../components/shared/styles";
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+
 export default {
   title: "Example/Button",
   component: Button,
@@ -44,13 +44,20 @@ Small.args = {
 export const Red = Template.bind({});
 Red.args = {
   size: "large",
-  backgroundColor: background.inputFormDefault,
+  backgroundColor: colorNeutral.darkBlack,
   label: "Button",
 };
 
 Red.argTypes = {
   backgroundColor: {
     control: "inline-radio",
-    options: [background.inputFormDefault, "green", "blue"],
+    options: [colorNeutral.darkBlack, "green", "blue"],
   },
 };
+
+// export const Practice = Template.bind({});
+// Practice.args = {
+//   size: "large",
+//   backgroundColor: Red,
+//   label: "Button",
+// };

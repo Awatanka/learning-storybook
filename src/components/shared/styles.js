@@ -59,22 +59,22 @@ export const colorDanger = {
   lightRed: "#FFF1F0",
 };
 
-// // !example with scss
-// export const colors = {
-//   main: {
-//     name: "main",
-//     hex: "#007DBC", // previously 0A6EB4
-//     scss: "$color__main",
-//     type: "communications",
-//   },
-//   "sequential-default-07": {
-//     name: "sequential-default-07",
-//     hex: "#9DEAFF",
-//     scss: "$color__sequential-default-07",
-//     type: "sequential-default",
-//     shortDescription: "sequential default 07",
-//   },
-// };
+// !example with scss
+export const colors = {
+  main: {
+    name: "main",
+    hex: "#007DBC", // previously 0A6EB4
+    scss: "$color__main",
+    type: "communications",
+  },
+  "sequential-default-07": {
+    name: "sequential-default-07",
+    hex: "#9DEAFF",
+    scss: "$color__sequential-default-07",
+    type: "sequential-default",
+    shortDescription: "sequential default 07",
+  },
+};
 
 // Typography styles
 // export const headers = {
